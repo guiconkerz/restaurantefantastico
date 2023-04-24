@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang=pt-br>
+    <head>
+        <meta charset=utf-8>
+        <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+        <meta name="description" content="Cadastro de clientes - Restaurante Fantástico">
+        <meta name="author" content="Guilherme Beltran">
+        <title>Restaurante Fantástico - Cadastro de clientes</title>
+        <link rel=stylesheet href="assets/app/view/css/style.css">
+        <link rel=stylesheet href="assets/app/view/css/datepicker.css">
+    </head>
+    <body data-spy=scroll data-target=#header-navbar data-offset=140>
+        <div id=page-start-anchor></div>
+        <section class="header header-fixed-xl">
+            <div class="header-top-line bg-yellow">
+                <div class=container>
+                    <div class=row>
+                        <nav class="navbar navbar-expand navbar-short justify-content-between w-100">
+                            <ul class=navbar-nav>
+                              <li class=nav-item>
+                                <a class="nav-link text-white" href="https://wa.me/5521997353154" target="_blank">
+                                    <span class="text-uppercase text-azul-marinho font-family-go-boom">Fale conosco</span>
+                                </a>
+                            </li>
+                            </ul>
+                            <span class="navbar-text text-uppercase d-flex align-items-center">
+                                <a href="https://wa.me/5521997353154"  target="_blank">
+                                    <span class="text-azul-marinho mr-1 font-family-go-boom">WhatsApp</span>
+                                    <span class="text-azul-marinho mr-1 font-family-go-boom">(21) 99735-3154</span>
+                                </a>
+                                <div class="d-flex justify-content-center">
+                                    <a href="https://wa.me/5521997353154"  target="_blank" class="brand-icon brand-icon-circle">
+                                        <img src="assets/app/view/images/whatsapp.png" class="img-fluid rounded-circle">
+                                    </a>  
+                                </div>
+                            </span>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="header-main bg-azul-marinho">
+                <div class=container>
+                    <div class=row>
+                        <nav class="navbar navbar-expand-lg navbar-light w-100 justify-content-center" id=header-navbar>
+                          <a class="navbar-brand font-weight-bold" href="#">
+                            <img src="assets/app/view/images/logo.png" class="img-fluid" style="max-width: 70px;" alt="">
+                          </a>
+                          
+                            <button class=navbar-toggler type=button data-toggle=collapse data-target=#navbarSupportedContent aria-controls=navbarSupportedContent aria-expanded=false aria-label="Toggle navigation">
+                                <span class=navbar-toggler-icon></span>
+                            </button>
+                            <div class="collapse navbar-collapse d-lg-flex" id=navbarSupportedContent>
+                                <ul class="navbar-nav col-lg-12 justify-content-lg-center">
+                                    <li class="nav-item">
+                                        <a class="nav-link text-uppercase text-yellow font-family-go-boom" data-toggle=smooth-scroll href=#sobre>Sobre</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-uppercase text-yellow font-family-go-boom" data-toggle=smooth-scroll href=#cadastro>Cadastro</a>
+                                    </li>
+                                </ul>
+                                <div class=navbar-spacer></div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="hero hero-fullscreen jarallax" data-speed=0.2 style="min-height: calc(100vh - 140px)"id=sobre>
+            <div class=hero-background>
+                <img src="assets/app/view/images/bg.jpg" alt="hero background" class=jarallax-img>
+                <div class=hero-background-overlay style="background-color: rgba(0, 0, 0, 0.5)"></div>
+            </div>
+            <div class="hero-foreground container d-flex flex-column justify-content-center">
+                <div class="py-14 py-md-23 py-lg-25">
+                    <div class="d-flex flex-column justify-content-center align-items-center text-center">
+                        <h1 class="fs-10 fs-lg-11 mb-0 font-family-vampire-wars text-yellow">Deseja ficar por dentro das novidades?</h1>
+                        <p class="mt-7 mb-10 text-justify text-white fs-5 font-family-adventure" style="max-width: 650px">Não perca mais nenhuma promoção! Registre-se agora em nosso site e receba em primeira mão todas as ofertas imperdíveis que temos para você. Além disso, você terá acesso a vantagens exclusivas, como cupons de desconto, brindes e promoções relâmpago.
+
+                            Ao se cadastrar em nossa plataforma, você estará sempre um passo à frente, recebendo em primeira mão todas as novidades e lançamentos de produtos. Aproveite essa oportunidade única de economizar e ficar por dentro das melhores promoções.</p>
+                    </div>
+                    <div class="row align-items-center mt-lg-20 justify-content-center mt-lg-20">
+                        <div class="col-12 col-md-4">
+                            <div class="card border-0 bg-transparent mb-10 mb-md-0">
+                                <div class="card-body p-0 text-center">
+                                    <div class="card-icon text-white mb-6">
+                                        <i class=material-icons>sell</i>
+                                    </div>
+                                    <div class="fs-1 lh-1 my-5 font-family-adventure text-uppercase font-weight-bold letter-spacing-caption text-white-75">Promoções</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card border-0 bg-transparent mb-10 mb-md-0">
+                                <div class="card-body p-0 text-center">
+                                    <div class="card-icon text-white mb-6">
+                                        <i class=material-icons>calendar_month</i>
+                                    </div>
+                                    <div class="fs-1 lh-1 my-5 font-family-adventure text-uppercase font-weight-bold letter-spacing-caption text-white-75">Eventos</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-cadastro mt-10" id=cadastro>
+          <div class="section-content container">
+            <div class=text-center>
+                <small class="fs-1 font-family-secondary text-uppercase font-weight-bold letter-spacing-caption text-muted text-white">Receba promoções e novidades em primeira mão</small>
+                <h1 class="text-white">Cadastre-se</h1>
+            </div>
+            <div class=row>
+                <div class="col-lg-8 offset-lg-2">
+                    <form action="#" class="row mt-17">
+                        <div class="col-12 col-sm-6">
+                            <div class=form-group>
+                                <label for=nome class="form-label text-white">Nome</label>
+                                <input type=text class=form-control id=txtNome placeholder="Nome">
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class=form-group>
+                                <label for=sobrenome class="form-label text-white">Sobrenome</label>
+                                <input type=text class=form-control id=txtSobrenome placeholder="Sobrenome">
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class=form-group>
+                                <label for=telefone class="form-label text-white">Telefone</label>
+                                <input type=text class=form-control id=txtTelefone placeholder="Telefone">
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class=form-group>
+                                <label for=email class="form-label text-white">Email</label>
+                                <input type=text class=form-control id=txtEmail placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class=form-group>
+                              <label for=cidade class="form-label text-white">Cidade</label>
+                              <input type=text class=form-control id=txtCidade placeholder=Cidade>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class=form-group>
+                                <label for=bairro class="form-label text-white">Bairro</label>
+                                <input type=text class=form-control id=txtBairro placeholder=Bairro>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class=form-group>
+                                <label for=dataNascimento class="form-label text-white">Data nascimento</label>
+                                <div class="input-group date align-items-center justify-content-center">
+                                    <input type="text" class="form-control">
+                                    <button class="btn btn-outline-secondary" type="button">
+                                        <i class="material-icons">calendar_month</i>
+                                    </button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 d-flex justify-content-between align-items-center flex-column flex-md-row">
+                            <div class="form-group form-check mb-9 mb-md-0">
+                                <input type=checkbox class=custom-checkbox id=exampleCheck2 checked=checked>
+                                <label class="form-check-label text-white">
+                                    Eu li e aceito os <a href=#>Termos de privacidade</a>
+                                </label>
+                            </div>
+                            <div class="form-group mb-0">
+                                <button class="btn btn-info btn-lg">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section id="contacts">
+            <div class="container py-19 py-lg-20">
+                <div class="row vertical-divider-light">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card border-0">
+                            <div class="card-body py-17 px-10 text-center">
+                                <div class="card-icon mb-6">
+                                    <i class=material-icons>location_on</i>
+                                </div>
+                                <div class="fs-1 lh-1 my-5 font-family-secondary text-uppercase font-weight-bold letter-spacing-caption text-muted">Endereço</div>
+                                <p class="mb-0 text-body text-white">
+                                    Estrada do Rio Grande, 1588<br>Taquara - Rio de Janeiro
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card border-0">
+                            <div class="card-body py-17 px-10 text-center">
+                                <div class="card-icon mb-6">
+                                    <i class=material-icons>phone</i>
+                                </div>
+                                <div class="fs-1 lh-1 my-5 font-family-secondary text-uppercase font-weight-bold letter-spacing-caption text-muted">Telefone</div>
+                                <p class="mb-0 text-body text-white">+55 (21) 1234-5678</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card border-0">
+                            <div class="card-body py-17 px-10 text-center">
+                                <div class="card-icon mb-6">
+                                    <i class=material-icons>access_time</i>
+                                </div>
+                                <div class="fs-1 lh-1 my-5 font-family-secondary text-uppercase font-weight-bold letter-spacing-caption text-muted">Horario de funcionamento</div>
+                                <p class="mb-0 text-body text-white">11:00 - 01:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card border-0">
+                            <div class="card-body py-17 px-10 text-center">
+                                <div class="card-icon mb-6">
+                                    <i class=material-icons>alternate_email</i>
+                                </div>
+                                <div class="fs-1 lh-1 my-5 font-family-secondary text-uppercase font-weight-bold letter-spacing-caption text-muted">Email</div>
+                                <p class="mb-0 text-body text-white">contato@restaurantefantastico.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.8553535063784!2d-43.387740784992346!3d-22.91870544405832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bd9f6fb377a2b%3A0x50afaf58cd15b80a!2sRestaurante%20Fant%C3%A1stico%20-%20Fusion%20Food!5e0!3m2!1spt-BR!2sbr!4v1681146904973!5m2!1spt-BR!2sbr" width="800" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        <footer class="text-center text-lg-start bg-yellow text-muted p-4 mt-25">
+            <section class="">
+              <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                  <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4 text-azul-marinho-b">
+                      Parcerias
+                    </h6>
+                    <p class="text-azul-marinho">
+                        CST Automação
+                    </p>
+                  </div>
+                  <div class="col-md-2 col-lg- col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4 text-azul-marinho-b">
+                      Redes Sociais
+                    </h6>
+                    <div class="d-flex justify-content-center">
+                        <p>
+                            <a href="https://www.facebook.com/restaurantefantasticofb/" target="_blank" class="brand-icon brand-icon-circle brand-icon-facebook">
+                                <img src="assets/app/view/images/facebook.png" class="img-fluid" alt="">
+                            </a>
+                        </p>
+                        <p>
+                            <a href="https://www.instagram.com/fantasticorestaurante/" target="_blank" class="brand-icon brand-icon-circle brand-icon-instagram">
+                                <img src="assets/app/view/images/instagram.png" class="img-fluid rounded-circle" alt="">
+                            </a>
+                        </p>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4 text-azul-marinho-b">
+                        Reservas de mesas
+                    </h6>
+                    <a href="https://reservation-widget.tagme.com.br/smartlink/6215223f3f7ab8001109dc3f"  target="_blank" class="brand-icon brand-icon-circle brand-icon-tagme">
+                        <img src="assets/app/view/images/tagme.jpg" class="img-fluid rounded-circle" alt="">
+                      </a>
+                  </div>
+                  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4 text-azul-marinho-b">
+                        Políticas e Termos
+                    </h6>
+                    <p>
+                        <a href=#>Termos de privacidade</a>
+                    </p>
+                  </div>
+                  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <a href="#" class="footer-icon" data-toggle="smooth-scroll" data-target="#page-start-anchor">
+                        <i class="material-icons black">arrow_upward</i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <div class="text-center p-4 text-azul-marinho-b">
+                <a class="text-reset text-azul-marinho-b" href="http://cstautomacao.com.br" target="_blank">© 2023 Copyright: CST Automação</a>
+              <div class="col-md-3 col-lg-1 col-xl-1 mx-auto mb-4">
+                <a class="text-reset text-azul-marinho-b" href="http://cstautomacao.com.br" target="_blank">
+                    <img src="assets/app/view/images/cst-logo.png" class="img-fluid rounded-circle" alt="">
+                </a>
+              </div>
+            </div>
+          </footer>
+        <script src="assets/app/view/js/vendor.js"></script>
+        <script src="assets/app/view/js/app.js"></script>
+        <script src="assets/app/view/js/datepicker.min.js"></script>
+        <script src="assets/app/view/js/datepicker.pt-BR.min.js"></script>
+    </body>
+</html>
